@@ -6,6 +6,8 @@ const Controller = {
     const response = fetch(`/search?q=${data.query}`).then((response) => {
       response.json().then((results) => {
         Controller.updateTable(results);
+        document.getElementById("search").style.height = "100px";
+        document.getElementById("title").style.display = "none";
       });
     });
   },
