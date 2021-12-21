@@ -54,3 +54,7 @@ button {
 button:focus {
   outline: 5px solid #260f3b;
 }
+
+#output {
+  display: none;
+}

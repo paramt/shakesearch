@@ -1,31 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>ShakeSearch</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>ShakeSearch</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="theme-color" content="#fafafa">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <div id="search">
-        <form id="form">
-            <label id="title" for="query">ShakeSearch</label>
-            <div>
-              <input type="text" id="query" name="query" placeholder="Search the complete works of William Shakespeare"><button type="submit">GO</button>
-            </div>
-        </form>
+      <form id="form">
+        <label id="title" for="query">ShakeSearch</label>
+        <div>
+          <input type="text" id="query" name="query" placeholder="Search the complete works of William Shakespeare" /><button
+            type="submit"
+          >
+            GO
+          </button>
+        </div>
+      </form>
     </div>
-    <p>
-        <table id="table">
-          <tbody id="table-body"></tbody>
-        </table>
-    </p>
-  <script src="app.js"></script>
-</body>
-
+    <div id="output">
+      <table id="table">
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

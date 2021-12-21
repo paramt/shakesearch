@@ -8,6 +8,7 @@ const Controller = {
         Controller.updateTable(results);
         document.getElementById("search").style.height = "100px";
         document.getElementById("title").style.display = "none";
+        document.getElementById("output").style.display = "block";
       });
     });
   },
