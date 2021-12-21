@@ -34,7 +34,7 @@ input {
   width: 800px;
   padding: 10px 15px;
   filter: opacity(80%);
-  font-size: 30px;
+  font-size: 25px;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
   border: none;
   outline: none;
@@ -46,7 +46,7 @@ input:focus {
 
 button {
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px 15px;
   border: none;
 }
