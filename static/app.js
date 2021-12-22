@@ -17,7 +17,7 @@ const Controller = {
     let output = "";
 
     for (let result of results) {
-      result = result.replace(searchWord, `<span class="highlighted">${searchWord}</span>`);
+      result = result.replaceAll(searchWord, `<span class="highlighted">${searchWord}</span>`);
       output += `<pre>${result}</pre>`;
     }
 
