@@ -27,7 +27,21 @@ const Controller = {
 
     document.getElementById("output").innerHTML = output;
   },
+
+  handleResize: () => {
+    let query = document.getElementById("query");
+
+    if (window.innerWidth < 500) {
+      query.placeholder = "Search the works of Shakespeare";
+    } else if (window.innerWidth < 700) {
+      query.placeholder = "Search the complete works of Shakespeare";
+    } else {
+      query.placeholder = "Search the complete works of William Shakespeare";
+    }
+  },
 };
 
 const form = document.getElementById("form");
 form.addEventListener("submit", Controller.search);
+window.addEventListener("resize", Controller.handleResize);
+Controller.handleResize();
