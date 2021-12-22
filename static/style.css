@@ -74,3 +74,8 @@ button:hover {
   background-color: rgb(255, 241, 162);
   padding: 2px 0;
 }
+
+#output .error {
+  text-align: center;
+  font-size: 20px;
+}

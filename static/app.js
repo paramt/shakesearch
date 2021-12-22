@@ -21,6 +21,10 @@ const Controller = {
       output += `<p>${result}<p/>`;
     }
 
+    if (!output) {
+      output = "<div class='error'>No results found</div>";
+    }
+
     document.getElementById("output").innerHTML = output;
   },
 };
