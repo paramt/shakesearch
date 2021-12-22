@@ -6,7 +6,7 @@ const Controller = {
     const response = fetch(`/search?q=${data.query}`).then((response) => {
       response.json().then((results) => {
         Controller.updateResults(results, data.query);
-        document.getElementById("search").style.height = "100px";
+        document.getElementById("search").classList.add("collapsed");
         document.getElementById("title").style.display = "none";
         document.getElementById("output").style.display = "block";
       });
