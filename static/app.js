@@ -22,7 +22,7 @@ const Controller = {
     }
 
     if (!output) {
-      output = "<div class='error'>No results found</div>";
+      output = "<pre>No results found</pre>";
     }
 
     document.getElementById("output").innerHTML = output;
