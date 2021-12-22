@@ -45,6 +45,7 @@ input:focus {
 }
 
 button {
+  background-color: #d5beee;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   font-size: 25px;
   padding: 10px 15px;
@@ -54,6 +55,11 @@ button {
 
 button:focus {
   outline: 5px solid #260f3b;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #d0b4ee;
 }
 
 #output {
