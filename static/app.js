@@ -39,9 +39,23 @@ const Controller = {
       query.placeholder = "Search the complete works of William Shakespeare";
     }
   },
+
+  backToTop: () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  },
+
+  toggleBackToTop: () => {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      document.getElementById("top").style.opacity = "1";
+    } else {
+      document.getElementById("top").style.opacity = "0";
+    }
+  },
 };
 
-const form = document.getElementById("form");
-form.addEventListener("submit", Controller.search);
+document.getElementById("form").addEventListener("submit", Controller.search);
+document.getElementById("top").addEventListener("click", Controller.backToTop);
 window.addEventListener("resize", Controller.handleResize);
+window.addEventListener("scroll", Controller.toggleBackToTop);
 Controller.handleResize();

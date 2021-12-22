@@ -3,6 +3,10 @@
   --border-radius: 7px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -61,12 +65,12 @@ button {
   float: right;
 }
 
-button:focus {
+form button:focus {
   outline: 4px solid #ffffff;
   outline-offset: 2px;
 }
 
-button:hover {
+form button:hover {
   cursor: pointer;
   background-color: #d0b4ee;
 }
@@ -91,6 +95,25 @@ button:hover {
 #output .highlighted {
   background-color: rgb(255, 241, 162);
   padding: 2px 0;
+}
+
+#top {
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 40px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#top i {
+  transition: color 0.1s;
+}
+
+#top i:hover {
+  color: #6e2bad;
 }
 
 @media screen and (max-width: 900px) {
