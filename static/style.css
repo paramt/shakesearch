@@ -41,7 +41,8 @@ input {
 }
 
 input:focus {
-  outline: 5px solid #260f3b;
+  outline: 4px solid #ffffff;
+  outline-offset: 2px;
 }
 
 button {
@@ -54,7 +55,8 @@ button {
 }
 
 button:focus {
-  outline: 5px solid #260f3b;
+  outline: 4px solid #ffffff;
+  outline-offset: 2px;
 }
 
 button:hover {
