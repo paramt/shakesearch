@@ -49,6 +49,7 @@ button {
   font-size: 25px;
   padding: 10px 15px;
   border: none;
+  float: right;
 }
 
 button:focus {
