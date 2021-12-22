@@ -64,4 +64,8 @@ button:hover {
 
 #output {
   display: none;
+  padding: 25px 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
