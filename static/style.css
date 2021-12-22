@@ -69,3 +69,8 @@ button:hover {
   font-size: 18px;
   line-height: 1.5;
 }
+
+#output .highlighted {
+  background-color: rgb(255, 241, 162);
+  padding: 2px 0;
+}

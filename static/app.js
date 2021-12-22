@@ -5,7 +5,7 @@ const Controller = {
     const data = Object.fromEntries(new FormData(form));
     const response = fetch(`/search?q=${data.query}`).then((response) => {
       response.json().then((results) => {
-        Controller.updateTable(results);
+        Controller.updateResults(results, data.query);
         document.getElementById("search").style.height = "100px";
         document.getElementById("title").style.display = "none";
         document.getElementById("output").style.display = "block";
@@ -13,10 +13,11 @@ const Controller = {
     });
   },
 
-  updateTable: (results) => {
+  updateResults: (results, searchWord) => {
     let output = "";
 
     for (let result of results) {
+      result = result.replace(searchWord, `<span class="highlighted">${searchWord}</span>`);
       output += `<p>${result}<p/>`;
     }
 
