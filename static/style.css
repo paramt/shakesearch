@@ -66,10 +66,19 @@ button:hover {
 
 #output {
   display: none;
-  padding: 25px 50px;
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 1.5;
+}
+
+#output pre {
+  font-family: "Open Sans", sans-serif;
+  padding: 25px 50px;
+  margin: 0;
+  text-align: center;
+}
+
+#output pre:nth-child(even) {
+  background-color: rgb(226, 211, 255);
 }
 
 #output .highlighted {
