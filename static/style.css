@@ -86,7 +86,7 @@ form button:hover {
   padding: 25px 0;
   margin: 0;
   text-align: center;
-  overflow: scroll;
+  overflow: auto;
 }
 
 #output pre:nth-child(even) {
