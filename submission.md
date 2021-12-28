@@ -1,4 +1,4 @@
-# Shakesearch
+# [Shakesearch](http://shakesearch.param.me)
 
 ## Changes
 
