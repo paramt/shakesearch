@@ -72,7 +72,7 @@ form button:focus {
 
 form button:hover {
   cursor: pointer;
-  background-color: #d0b4ee;
+  background-color: #c8a7ec;
 }
 
 #output {
